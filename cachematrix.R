@@ -29,6 +29,6 @@ cacheSolve <- function(x, ...) {
   }
   data <- x$get()
   m <- inverse.gaussian(data)
-  x$setInverse(m)
+  x$solve(m)
   m
 }
